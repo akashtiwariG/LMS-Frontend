@@ -14,7 +14,7 @@ const myFunction = async () => {
   return res.data;
 }
 
-export default function page() {
+export default function Page() {
 
   const [bool,setBool] = useState(false);
   const [data,setData] = useState([]);
@@ -78,7 +78,6 @@ export default function page() {
 
     
     <div className="mt-8 grid grid-flow-cols md:grid-flow-row">
-    
 
       {data.map((issue,i) =>{
          return <div
